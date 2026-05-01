@@ -1,5 +1,4 @@
 # playnitedesktopsync
-Imports Windows desktop shortcuts into your Playnite library.
 
 Desktop Shortcut Library is a small Playnite library extension that imports Windows desktop shortcuts into your Playnite library.
 
