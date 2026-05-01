@@ -2,6 +2,8 @@
 
 Desktop Shortcut Library is a Playnite library extension that imports Windows shortcut files from configurable watch folders.
 
+<img width="1784" height="1138" alt="image" src="https://github.com/user-attachments/assets/9c103ed4-171f-4b12-99f7-51c33ffa6094" />
+
 ## Features
 
 - Imports Windows `.lnk` shortcuts as Playnite games.
