@@ -16,7 +16,17 @@ Desktop Shortcut Library is a Playnite library extension that imports Windows sh
 
 Only `.lnk` files are imported. `.url` files and raw `.exe` files are ignored.
 
-## Building
+## Installation
+
+Precompiled `.pext` packages are available on the [GitHub Releases page](https://github.com/jgdf42/playnitedesktopsync/releases).
+
+1. Download the latest `DesktopShortcutLibrary_*.pext` file.
+2. Open the file with Playnite.
+3. Restart Playnite if prompted.
+
+---
+
+## OPTIONAL: Building from Source
 
 This project targets .NET Framework 4.6.2 and references the Playnite SDK package.
 
