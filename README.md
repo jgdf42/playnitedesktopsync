@@ -1,9 +1,25 @@
-# playnitedesktopsync
+# Desktop Shortcut Library
 
-Desktop Shortcut Library is a small Playnite library extension that imports Windows desktop shortcuts into your Playnite library.
+Desktop Shortcut Library is a Playnite library extension that imports Windows shortcut files from configurable watch folders.
 
-It scans configurable watch folders for .lnk files, imports them as installed games, and uses the shortcut’s target, arguments, working directory, and icon when available. By default it watches the current user Desktop and Public Desktop, but you can customize those folders in the extension settings and add up to 10 additional watch folders.
+## Features
 
-The extension syncs on startup/library update and also includes a manual Desktop Shortcuts -> Sync desktop shortcuts menu action. If a shortcut is removed from a watched folder, the matching Playnite entry imported by this extension is removed on the next sync. If a shortcut is renamed, syncing updates the library entry behavior through the shortcut scan. Supports blacklisting certain shortcuts from syncing with wildcard support.
+- Imports Windows `.lnk` shortcuts as Playnite games.
+- Watches the current user's Desktop and Public Desktop by default.
+- Supports up to 10 additional watch folders.
+- Lets users remove the default Desktop folders if they are not needed.
+- Supports ignored shortcut names with exact matches or simple wildcards like `*Launcher*`.
+- Syncs on startup/library update and includes a manual `Desktop Shortcuts -> Sync desktop shortcuts` action.
+- Removes plugin-imported games when their source shortcut is removed or ignored.
 
-Current support: Windows .lnk shortcuts only. It does not import .url files or raw .exe files.
+## Supported Files
+
+Only `.lnk` files are imported. `.url` files and raw `.exe` files are ignored.
+
+## Building
+
+This project targets .NET Framework 4.6.2 and references the Playnite SDK package.
+
+## Packaging
+
+Build the extension DLL, then package `DesktopShortcutLibrary.dll` and `extension.yaml` into a `.pext` file for installation in Playnite.

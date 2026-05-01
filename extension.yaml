@@ -1,0 +1,9 @@
+Id: DesktopShortcutLibrary_5e43a80a-37d8-4d7e-a6be-b137744aa82b
+Name: Desktop Shortcut Library
+Author: moo
+Version: 1.4
+Module: DesktopShortcutLibrary.dll
+Type: GameLibrary
+Links:
+  - Name: Playnite SDK docs
+    Url: https://api.playnite.link/docs/tutorials/extensions/libraryPlugins.html
